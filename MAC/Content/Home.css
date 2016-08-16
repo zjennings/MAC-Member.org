@@ -1,0 +1,106 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    border-top: 1px solid #aaa;
+}
+
+/* NAV */
+.navbar {
+    border-radius: 0;
+    border-bottom: 2px solid #ebbe15;
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+
+    .navbar-brand img {
+        height: 100%;
+    }
+
+/* HERO */
+h1, h2, h3, h4 {
+    font-family: 'Roboto Slab';
+    color: #376aaa !important;
+}
+
+.jumbotron p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.jumbotron-hero {
+    background-image: url('./img/shattered.png');
+    background-color: #eee;
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.5);
+}
+
+    .jumbotron-hero h3 {
+        font-weight: 300;
+    }
+
+.video-well {
+    padding: 6px;
+    margin-top: 15px;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+/* WHO WE SERVE */
+.col-join {
+    text-align: center;
+    padding: 5%;
+}
+
+.well-join {
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.5);
+    border-color: #ebbe15;
+    background-color: #f8f8f8;
+}
+
+.whoWeServe-ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+    .whoWeServe-ul li {
+        padding: 2px 0 8px 20px;
+        display: block;
+        position: relative;
+    }
+
+.checkmark li:before {
+    content: '\e013';
+}
+
+.whoWeServe-ul li:before {
+    font-family: 'Glyphicons Halflings';
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    font-size: 80%;
+    color: #449d44;
+}
+
+/* SPONSORS */
+.jumbotron-sponsors {
+    background-color: #fff;
+    text-align: center;
+    padding-top: 0;
+}
+
+    .jumbotron-sponsors img {
+        margin: 20px 5px;
+        width: 150px;
+    }
+
+/* FOOTER */
+.jumbotron-footer {
+    background-color: #fff;
+    text-align: center;
+}
