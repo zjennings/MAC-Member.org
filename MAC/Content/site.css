@@ -1,0 +1,184 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee;
+    background-image: url('./Img/bg_diag.png');
+    padding: 40px 0 80px 0;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+/* NAV */
+.nav-wrapper {
+    min-height: 68px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background: none;
+    border: none;
+}
+
+    .navbar .container {
+        background-color: #fff;
+        padding: 10px 10px 8px 20px;
+    }
+
+.affix {
+    min-width: 100%;
+    background-color: #fff;
+    top: 0;
+    z-index: 999;
+    border-bottom: solid 1px #ddd;
+    border-radius: 0;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+
+    .navbar-brand img {
+        height: 100%;
+    }
+
+.navbar-form {
+    border: none;
+    margin-right: 0;
+}
+
+.navbar-header {
+    margin-right: 0;
+}
+
+.navbar-collapse {
+    border: none;
+}
+
+ul.navbar-nav a {
+    font-size: 1.2em;
+    color: #000;
+}
+
+    ul.navbar-nav a:hover {
+        color: #3697ff !important;
+    }
+
+.navbar-form input {
+    border-radius: 0;
+    margin-right: 5px;
+}
+
+/* FOOTER */
+.row-footer {
+    background: linear-gradient(to bottom, #555, #313131);
+    color: #ccc;
+    font-size: 15px;
+}
+
+.row-footer img {
+    width: 150px;
+}
+
+.row-footer a, .row-footer a:visited {
+    color: #ccc;    
+}
+
+.row-footer a:hover {
+    text-decoration: underline;
+}
+
+.row-footer table td {
+    vertical-align: top;
+    padding: 0 10px 20px 0;
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+.row-footer hr {
+    border-top: solid 1px #666;
+}
+
+.footer-col {
+    padding: 45px;
+}
+
+.footer-news {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-news-date {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.footer-header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.row-footer ul {
+    line-height: 2em;
+    padding-left: 15px;
+}
+
+.row-footer li {    
+    display: block;
+}
+
+.row-footer li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;    
+}
+
+.row-subFooter {
+    text-align: center;
+    background-color: #222;
+    color: #ddd;
+    padding: 30px;
+}
+
+/* SECTION HEADER */
+.row-sectionHeader {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-bottom: solid 1px #ddd;
+}
+
+    .row-sectionHeader h2 {
+        color: #555;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+        padding-left: 30px;
+        text-transform: uppercase;
+    }
