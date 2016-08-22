@@ -22,10 +22,10 @@
 </head>
 <body>
     <div class="nav-wrapper">
-        <nav class="navbar navbar-default" data-spy="affix" data-offset-top="40" data-offset-bottom="200">
+        <nav class="navbar navbar-default" data-spy="affix" data-offset-top="40">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" aria-expanded="false" style="border:none;">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -58,19 +58,82 @@
     </div>
     
     <div class="container">  
-        @RenderBody()
-
+        @RenderBody()           
+        
         <div class="row row-footer">
-            <div class="col-md-12" style="text-align:center;">
-                © 2013 Merchant Acquirers' Committee. All Rights Reserved.
+            <div class="col-md-4 footer-col">
+                <img src="~/Content/img/maclogo_cropped_wht.png" />
+                <br />
+                <br />
+                <table>
+                    <tr>
+                        <td><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></td>
+                        <td>
+                            PO Box 123<br />
+                            Some Street Name Rd.<br />
+                            Louisville, KY 40001
+                        </td>
+                    </tr>
+                    @*<tr>
+                        <td><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></td>
+                        <td>
+                            (555) 502-4646
+                        </td>
+                    </tr>*@
+                    <tr>
+                        <td><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></td>
+                        <td>
+                            <a href="mailto:support@macmember.org">support@macmember.org</a>
+                        </td>
+                    </tr>
+                </table>
             </div>
-        </div>            
-
+            <div class="col-md-4 footer-col">
+                <h2 class="footer-header">latest news</h2>
+                <span class="footer-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                <span class="footer-news-date">04 Aug 2016</span>
+                <hr />
+                <span class="footer-news">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+                <span class="footer-news-date">04 Aug 2016</span>
+                <hr />
+                <span class="footer-news">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                <span class="footer-news-date">04 Aug 2016</span>                
+            </div>            
+            <div class="col-md-4 footer-col">
+                <h2 class="footer-header">explore mac</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Our Clients</a></li>
+                    <li><a href="#">Our Pricing</a></li>
+                    <li><a href="#">MAC Tour</a></li>
+                    <li><a href="#"></a>Contact Us</a></li>
+                </ul>
+            </div>  
+        </div>     
+        <div class="row row-subFooter">
+            © 2016 Merchant Acquirers' Committee. All Rights Reserved.
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/morphist")
+    <script>
+        var removePadding = function () {
+            if ($(window).width() < 768) {
+                $("body").css("padding", 0);
+            }
+            else {
+                $("body").css("padding", "40px 0 80px 0");
+            }
+        };
+
+        removePadding();
+
+        $(window).resize(removePadding);
+    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

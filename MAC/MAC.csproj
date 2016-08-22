@@ -217,8 +217,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Home.css" />
     <Content Include="Content\Img\bg_diag.png" />
+    <Content Include="Content\Img\bg_diag_tp.png" />
     <Content Include="Content\Img\boardwalk_3.jpg" />
     <Content Include="Content\Img\maclogo_cropped.png" />
+    <Content Include="Content\Img\maclogo_cropped_wht.png" />
     <Content Include="Content\Img\sponsors\aperiafooter.jpg" />
     <Content Include="Content\Img\sponsors\bill1st-logo.png" />
     <Content Include="Content\Img\sponsors\experian_logo.png" />

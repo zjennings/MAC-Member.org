@@ -1,9 +1,7 @@
 ﻿/* INTRO */
-.jumbotron-intro {
+.row-intro {
     background-image: url('./Img/boardwalk_3.jpg');
     background-position: top center;
-    margin-left: -15px;
-    margin-right: -15px;
     margin-bottom: 0;
     border-radius: 0 !important;
     padding: 70px 50px 100px 50px;
@@ -11,7 +9,7 @@
     color: #fff;
 }
 
-    .jumbotron-intro h1 {
+    .row-intro h1 {
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
     }
@@ -21,7 +19,7 @@
     padding-left: 0;
 }
 
-.jumbotron-intro h2 {
+.row-intro h2 {
     font-size: 26px;
     color: #ddd;
 }
@@ -39,10 +37,10 @@
     border-radius: 4px;
 }
 
-.btn-join:hover {
-    background-color: rgba(255,255,255,0.3);
-    color: #fff;
-}
+    .btn-join:hover {
+        background-color: rgba(255,255,255,0.3);
+        color: #fff;
+    }
 
 .video-well {
     padding: 6px;
@@ -54,51 +52,42 @@
 
 /* WHO WE SERVE */
 .row-whoWeServe {
-    margin-bottom: 40px;
+    padding: 0 30px;
 }
 
+.whoWeServe {
+    padding: 12px 18px 10px 18px;
+    font-size: 18px;
+    color: #0056a6;
+    text-transform: uppercase;
+    background-image: url('./Img/bg_diag_tp.png');
+    border-bottom: solid 2px #2897ff;
+    margin-bottom: 18px;
+}
+
+/* VIDEO */
 .row-video {
     background-color: #eee;
 }
 
-.col-video {
-    padding: 3% 10%;
-}
-
-.whoWeServe-ul {
-    list-style: none;
-    padding-left: 20px;
-    margin-bottom: 0;
-}
-
-    .whoWeServe-ul li {
-        padding: 2px 0 8px 20px;
-        display: block;
-        position: relative;
-        font-size: 16px;
+    .row-video > div {
+        padding: 3%;
+        background-image: url('./Img/bg_diag_tp.png');
     }
-
-.checkmark li:before {
-    content: '\e013';
-}
-
-.whoWeServe-ul li:before {
-    font-family: 'Glyphicons Halflings';
-    position: absolute;
-    left: 0px;
-    top: 3px;
-    font-size: 80%;
-    color: #449d44;
-}
 
 /* SPONSORS */
-.jumbotron-sponsors {
-    background-color: #fff;
-    text-align: center;
-    padding-top: 0;
+.row-featuredSponsor div {
+    padding: 2% 3%;
 }
 
-    .jumbotron-sponsors img {
-        margin: 20px 5px;
-        width: 150px;
-    }
+.row-featuredSponsor img {
+    width: 100%;
+}
+
+.row-ourSponsors div {
+    padding: 2% 3%;
+}
+
+.row-ourSponsors img {
+    width: 100%;
+}
