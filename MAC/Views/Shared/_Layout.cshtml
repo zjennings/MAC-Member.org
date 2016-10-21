@@ -31,7 +31,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="@Url.Action("Index","Home")">
                         <img src="~/Content/img/maclogo_cropped.png" />
                         <span class="sr-only">Home</span>
                     </a>
@@ -39,9 +39,9 @@
 
                 <div class="collapse navbar-collapse clearfix" id="navbar-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">EVENTS</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                        <li><a href="#">JOIN</a></li>
+                        <li><a href="@Url.Action("Index","Events")">EVENTS</a></li>
+                        @*<li><a href="#">CONTACT US</a></li>*@
+                        <li><a href="@Url.Action("Index","Join")">JOIN</a></li>
                     </ul>
                     <form class="navbar-form navbar-right">
                         <div class="form-group">
@@ -60,6 +60,63 @@
     <div class="container">  
         @RenderBody()           
         
+        <div class="row row-sectionHeader row-sponsorsHeader">
+            <h2>our sponsors</h2>
+        </div>
+
+        <div class="row row-ourSponsors2">
+            <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="sponsor-wrapper">
+                    <img src="~/Content/img/sponsors/NMImacLogo.jpg" />
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="sponsor-wrapper">
+                    <img src="~/Content/img/sponsors/bill1st-logo.png" />
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="sponsor-wrapper">
+                    <img src="~/Content/img/sponsors/experian_logo.png" />
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="sponsor-wrapper">
+                    <img src="~/Content/img/sponsors/intuit_logo.jpg" />
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="sponsor-wrapper">
+                    <img src="~/Content/img/sponsors/spectrum_logo.png" />
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="sponsor-wrapper">
+                    <img src="~/Content/img/sponsors/TFSLogo2.png" />
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="sponsor-wrapper">
+                    <img src="~/Content/img/sponsors/IDologyLogo.jpg" />
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="sponsor-wrapper">
+                    <img src="~/Content/img/sponsors/MLS Small.jpg" />
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="sponsor-wrapper">
+                    <img src="~/Content/img/sponsors/aperiafooter.jpg" />
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-2">
+                <div class="sponsor-wrapper">
+                    <img src="~/Content/img/sponsors/Trustwave_logo_RGB_150dpi.jpg" />
+                </div>
+            </div>
+        </div>
+
         <div class="row row-footer">
             <div class="col-md-4 footer-col">
                 <img src="~/Content/img/maclogo_cropped_wht.png" />
@@ -69,9 +126,9 @@
                     <tr>
                         <td><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></td>
                         <td>
-                            PO Box 123<br />
-                            Some Street Name Rd.<br />
-                            Louisville, KY 40001
+                            2223 S. Highland Dr.<br />
+                            Suite #218<br />
+                            Salt Lake City, UT 84106
                         </td>
                     </tr>
                     @*<tr>
@@ -88,7 +145,7 @@
                     </tr>
                 </table>
             </div>
-            <div class="col-md-4 footer-col">
+            @*<div class="col-md-4 footer-col">
                 <h2 class="footer-header">latest news</h2>
                 <span class="footer-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                 <span class="footer-news-date">04 Aug 2016</span>
@@ -98,17 +155,15 @@
                 <hr />
                 <span class="footer-news">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
                 <span class="footer-news-date">04 Aug 2016</span>                
-            </div>            
-            <div class="col-md-4 footer-col">
+            </div>*@            
+            <div class="col-md-4 col-md-offset-4 footer-col">
                 <h2 class="footer-header">explore mac</h2>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Our Clients</a></li>
-                    <li><a href="#">Our Pricing</a></li>
-                    <li><a href="#">MAC Tour</a></li>
-                    <li><a href="#"></a>Contact Us</a></li>
+                    <li><a href="#">Our Services</a></li>                    
+                    <li><a href="#">Membership Dues</a></li>                    
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
             </div>  
         </div>     
@@ -120,8 +175,9 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/morphist")
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script>
-        var removePadding = function () {
+        function removePadding () {
             if ($(window).width() < 768) {
                 $("body").css("padding", 0);
             }
@@ -130,9 +186,23 @@
             }
         };
 
-        removePadding();
+        function resizeSponsors() {
+            var maxHeight = Math.max.apply(null, $(".row-ourSponsors2 img").map(function () {
+                return $(this).height();
+            }).get());
 
-        $(window).resize(removePadding);
+            $(".row-ourSponsors2 .sponsor-wrapper").height(maxHeight + 10);
+        }
+
+        $(window).resize(function () {
+            resizeSponsors();
+            removePadding();
+        });
+
+        $(document).ready(function () {
+            resizeSponsors();
+            removePadding();
+        });
     </script>
     @RenderSection("Scripts", required: false)
 </body>

@@ -121,17 +121,6 @@ ul.navbar-nav a {
     padding: 45px;
 }
 
-.footer-news {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.footer-news-date {
-    display: block;
-    text-transform: uppercase;
-    font-size: 13px;
-}
-
 .footer-header {
     text-transform: uppercase;
     font-weight: 700;
@@ -182,3 +171,74 @@ ul.navbar-nav a {
         padding-left: 30px;
         text-transform: uppercase;
     }
+
+/* INFO TABLE */
+.table-info {
+    border-collapse: collapse;
+    border: solid 1px #eee;
+    width: 100%;
+}
+
+.table-info thead tr {
+    border-bottom: solid 2px #2897ff;
+    background-image: url('./Img/bg_diag_tp.png');
+}
+
+.table-info thead td {
+    /*text-align: center;*/
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 16px;    
+}
+
+.td-nowrap thead td {
+    white-space: nowrap;
+}
+
+.table-info td {
+    padding: 10px 15px 15px 10px;
+    border: solid 1px #eee;
+    vertical-align: top;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+.table-striped-double tbody tr:nth-child(4n), .table-striped-double tbody tr:nth-child(4n-1) {
+    background-color: #f6f6f6;
+}
+
+/* SPONSORS */
+.row-ourSponsors2 {
+    padding: 0 25px 50px 25px;    
+}
+
+.row-ourSponsors2>div {
+    padding: 5px;        
+}
+
+.row-ourSponsors2 .sponsor-wrapper {
+    border: solid 1px #ddd;
+    position: relative;    
+}
+
+.row-ourSponsors2 img {
+    width: 100%;
+    padding: 5px;    
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+.row-sponsorsHeader {
+    margin-top: 50px;
+}
+
+form .required::after {
+    content: "*";
+    color: #d60000;
+}

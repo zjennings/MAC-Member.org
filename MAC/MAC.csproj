@@ -198,7 +198,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EventsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JoinController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -215,10 +217,12 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Events.css" />
     <Content Include="Content\Home.css" />
     <Content Include="Content\Img\bg_diag.png" />
     <Content Include="Content\Img\bg_diag_tp.png" />
     <Content Include="Content\Img\boardwalk_3.jpg" />
+    <Content Include="Content\Img\brickwall.jpg" />
     <Content Include="Content\Img\maclogo_cropped.png" />
     <Content Include="Content\Img\maclogo_cropped_wht.png" />
     <Content Include="Content\Img\sponsors\aperiafooter.jpg" />
@@ -231,6 +235,7 @@
     <Content Include="Content\Img\sponsors\spectrum_logo.png" />
     <Content Include="Content\Img\sponsors\TFSLogo2.png" />
     <Content Include="Content\Img\sponsors\Trustwave_logo_RGB_150dpi.jpg" />
+    <Content Include="Content\Img\stonewall.jpg" />
     <Content Include="Content\morphext.css" />
     <Content Include="Content\morphist.css" />
     <Content Include="Content\site.css" />
@@ -311,6 +316,9 @@
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Scripts\jquery-3.1.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.0.min.map" />
+    <Content Include="Views\Join\Index.cshtml" />
+    <Content Include="Views\Join\Apply.cshtml" />
+    <Content Include="Views\Events\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
