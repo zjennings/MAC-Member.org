@@ -19,97 +19,149 @@
 }
 
 <div class="row row-intro row-border-after-nav">
-    <div class="col-md-12">
-        <h1>
-            WE ARE
-            <ul id="intro-text">
-                <li>MERCHANTS</li>
-                <li>ACQUIRERS</li>
-                <li>COMMITTEE</li>
-            </ul>
-        </h1>
-        <h2>Over 9000 clients! <span class="blue-italic">Fraud Alerts</span> & Notifcations</h2>
-        <button class="btn btn-default btn-lg btn-join">Join Now!</button>
-    </div>
+    <h1>
+        WE ARE
+        <ul id="intro-text">
+            <li>FRAUD MITIGATION</li>
+            <li>EDUCATION</li>
+            <li>INFORMATION SHARING</li>
+        </ul>
+    </h1>
+    <h2>Over 28,000 <span class="blue-italic">Fraud Alerts!</span></h2>
+    <a href="@Url.Action("Index","Join")"><button class="btn btn-default btn-lg btn-join">Join Now!</button></a>
 </div>
 
 <div class="row row-sectionHeader">
-    <div class="col-md-12">
-        <h2>WHO WE SERVE</h2>
-    </div>    
+    <h2>WHO WE SERVE</h2>
 </div>
 
 <div class="row row-whoWeServe">
     <div class="col-sm-6">
         <div class="whoWeServe">Acquiring Banks</div>
-        <div class="whoWeServe">Acquiring Credit Unions</div>
-        <div class="whoWeServe">Acquiring Savings & Loans</div>
+        <div class="whoWeServe">Compliance Professionals</div>
         <div class="whoWeServe">Gateway Providers</div>
         <div class="whoWeServe">Internet Service Providers</div>
+        <div class="whoWeServe">Independent Sales Offices</div>
+        <div class="whoWeServe">Merchant Acquirers</div>
     </div>
     <div class="col-sm-6">
-        <div class="whoWeServe">ISO/MSP</div>
-        <div class="whoWeServe">Merchant Acquirers</div>
+        <div class="whoWeServe">Merchant Service Providers</div>
+        <div class="whoWeServe">Payment Facilitators</div>
         <div class="whoWeServe">Processors</div>
         <div class="whoWeServe">Risk Management Professionals</div>
+        <div class="whoWeServe">Security Professionals</div>
+        <div class="whoWeServe">Third Party Providers</div>
     </div>
 </div>
 
-<div class="row row-sectionHeader">
-    <div class="col-md-12">
+<div class="row">
+    <div class="col-md-12" style="padding: 0 45px;">
+        <h3 style="margin-bottom:20px;">
+            What will MAC do for you?
+        </h3>
+        <p style="line-height: 1.8em; font-size:15px;">
+            MAC is here to assist its members with managing risk and preventing fraud by providing a communication channel to encourage ongoing networking, benchmarking, and information sharing among its members. Membership in MAC will provide you the value of sharing best practices, discussing current fraud trends, loss mitigations, and the opportunity to receive education materials and share information within your peer group. The daily communications from MAC will provide information about the industry. members will receive e-mails regarding suspicious or problematic merchants as well as articles and informations to help keep you up-to-date. MAC also provides networking opportunities not available anywhere else in the industry, member contact lists and access to the MAC website.
+        </p>
+    </div>
+</div>
+
+@*<div class="row row-sectionHeader">
         <h2>who we are</h2>
     </div>
-</div>
 
-<div class="row row-video">
-    <div class="col-md-12">        
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe src="https://player.vimeo.com/video/119398759?title=0&byline=0&portrait=0&api=1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>        
-    </div>
-</div>
+    <div class="row row-video">
+        <div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/119398759?title=0&byline=0&portrait=0&api=1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>*@
 
 <div class="row row-sectionHeader">
-    <div class="col-md-12">
-        <h2>our sponsors</h2>
+    <div class="col-md-6">
+        <h2>latest news</h2>
+    </div>
+    <div class="col-md-6 hidden-sm hidden-xs">
+        <h2>who is mac</h2>
+    </div>    
+</div>
+
+<div class="row">
+    <div class="col-md-6 col-news">
+        <a href="">
+            <span class="news">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+            <span class="news-date">01 Sept 2016</span>
+        </a>
+        <hr />
+        <a href="">
+            <span class="news">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+            <span class="news-date">22 Aug 2016</span>
+        </a>
+        <hr />
+        <a href="">
+            <span class="news">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+            <span class="news-date">14 Aug 2016</span>
+        </a>
+    </div>
+    <div class="col-md-6 hidden-sm hidden-xs col-video">
+        <div style="margin-right:30px;">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/119398759?title=0&byline=0&portrait=0&api=1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="row row-ourSponsors">
-    <div class="col-md-6 col-md-offset-3 col-xs-12">        
-        <img src="~/Content/img/sponsors/NMImacLogo.jpg" />
+<div class="row row-sectionHeader hidden-md hidden-lg">
+    <div class="col-xs-12">
+        <h2>who is mac</h2>
+    </div> 
+</div>
+<div class="row hidden-md hidden-lg">
+    <div class="col-xs-12 col-video">
+        <div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://player.vimeo.com/video/119398759?title=0&byline=0&portrait=0&api=1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 </div>
-<div class="row row-ourSponsors">
-    <div class="col-md-3 col-xs-6">
-        <img src="~/Content/img/sponsors/bill1st-logo.png" />
+
+@*<div class="row row-ourSponsors">
+        <div class="col-md-6 col-md-offset-3 col-xs-12">
+            <img src="~/Content/img/sponsors/NMImacLogo.jpg" />
+        </div>
     </div>
-    <div class="col-md-3 col-xs-6">
-        <img src="~/Content/img/sponsors/experian_logo.png" />
+    <div class="row row-ourSponsors">
+        <div class="col-md-3 col-xs-6">
+            <img src="~/Content/img/sponsors/bill1st-logo.png" />
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <img src="~/Content/img/sponsors/experian_logo.png" />
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <img src="~/Content/img/sponsors/intuit_logo.jpg" />
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <img src="~/Content/img/sponsors/spectrum_logo.png" />
+        </div>
     </div>
-    <div class="col-md-3 col-xs-6">
-        <img src="~/Content/img/sponsors/intuit_logo.jpg" />
+    <div class="row row-ourSponsors">
+        <div class="col-md-3 col-xs-6">
+            <img src="~/Content/img/sponsors/TFSLogo2.png" />
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <img src="~/Content/img/sponsors/IDologyLogo.jpg" />
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <img src="~/Content/img/sponsors/MLS Small.jpg" />
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <img src="~/Content/img/sponsors/aperiafooter.jpg" />
+        </div>
     </div>
-    <div class="col-md-3 col-xs-6">
-        <img src="~/Content/img/sponsors/spectrum_logo.png" />
-    </div>
-</div>
-<div class="row row-ourSponsors">
-    <div class="col-md-3 col-xs-6">
-        <img src="~/Content/img/sponsors/TFSLogo2.png" />
-    </div>
-    <div class="col-md-3 col-xs-6">
-        <img src="~/Content/img/sponsors/IDologyLogo.jpg" />
-    </div>
-    <div class="col-md-3 col-xs-6">
-        <img src="~/Content/img/sponsors/MLS Small.jpg" />
-    </div>
-    <div class="col-md-3 col-xs-6">
-        <img src="~/Content/img/sponsors/aperiafooter.jpg" />
-    </div>
-</div>
-<div class="row row-ourSponsors">
-    <div class="col-md-3 col-xs-6">
-        <img src="~/Content/img/sponsors/Trustwave_logo_RGB_150dpi.jpg" />
-    </div>
-</div>
+    <div class="row row-ourSponsors">
+        <div class="col-md-3 col-xs-6">
+            <img src="~/Content/img/sponsors/Trustwave_logo_RGB_150dpi.jpg" />
+        </div>
+    </div>*@

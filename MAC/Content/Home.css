@@ -1,6 +1,6 @@
 ﻿/* INTRO */
 .row-intro {
-    background-image: url('./Img/boardwalk_3.jpg');
+    background-image: url('./Img/stonewall.jpg');
     background-position: top center;
     margin-bottom: 0;
     border-radius: 0 !important;
@@ -76,7 +76,7 @@
     }
 
 /* SPONSORS */
-.row-featuredSponsor div {
+/*.row-featuredSponsor div {
     padding: 2% 3%;
 }
 
@@ -90,4 +90,36 @@
 
 .row-ourSponsors img {
     width: 100%;
+}*/
+
+
+/* NEWS */
+.col-news {
+    padding: 0 35px 35px 35px;
+}
+
+.news {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #999;
+}
+
+.news-header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.col-video>div {
+    background-image: url('./Img/bg_diag_tp.png');
+    padding: 20px;    
 }

@@ -1,0 +1,299 @@
+﻿@{
+    ViewBag.Title = "Join";
+}
+
+@section Scripts{
+
+}
+
+<div class="row row-sectionHeader">
+    <h2>membership application</h2>
+</div>
+
+<div class="row" style="padding: 0 25px;">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="i_companyName" class="col-sm-3 control-label required">Company name</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="i_companyName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_address" class="col-sm-3 control-label required">Address</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="i_address">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_city" class="col-sm-3 control-label required">City</label>
+            <div class="col-sm-6">
+                <div class="form-group row" style="margin-bottom: 0;">
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="i_city">
+                    </div>
+                    <label for="i_state" class="col-sm-1 control-label required">State</label>
+                    <div class="col-sm-2">
+                        @*<input type="text" class="form-control" id="i_state">*@
+                        <select class="form-control" id="i_state">
+                            <option></option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>	
+                    </div>
+                    <label for="i_zip" class="col-sm-1 control-label required">Zip</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="i_zip">
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*<div class="form-group">
+            <label for="i_state" class="col-sm-3 control-label required">State</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="i_state">
+            </div>
+        </div>*@
+        <div class="form-group">
+            <label for="i_callingCode" class="col-sm-3 control-label required">Country calling code</label>
+            <div class="col-sm-6">
+                <select class="form-control" id="i_callingCode">
+                    <option value="1" selected="selected">+1&nbsp;&nbsp;North America</option>
+                    <option value="31">+31 Netherlands</option>
+                    <option value="32">+32 Belgium</option>
+                    <option value="33">+33 France</option>
+                    <option value="34">+34 Spain</option>
+                    <option value="39">+39 Italy</option>
+                    <option value="41">+41 Switzerland</option>
+                    <option value="43">+43 Austria</option>
+                    <option value="44">+44 United Kingdom</option>
+                    <option value="45">+45 Denmark</option>
+                    <option value="46">+46 Sweden</option>
+                    <option value="47">+47 Norway</option>
+                    <option value="48">+48 Poland</option>
+                    <option value="49">+49 Germany</option>
+                    <option value="353">+353 Ireland</option>
+                    <option value="371">+371 Latvia</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_phoneUS" class="col-sm-3 control-label required">Phone (US)</label>
+            <div class="col-sm-6">
+                <div class="form-group row" style="margin-bottom: 0;">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="i_phoneUS">
+                    </div>
+                    <label for="i_phoneUSExt" class="col-sm-1 control-label">Ext.</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="i_phoneUSExt">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_phoneNonUS" class="col-sm-3 control-label">Phone (non-US)</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="i_phoneNonUS">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_website" class="col-sm-3 control-label">Website URL</label>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" id="i_website">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_primaryContact" class="col-sm-3 control-label required">Primary contact</label>
+            <div class="col-sm-6">
+                <div class="form-group row" style="margin-bottom: 0;">
+                    <label for="i_primaryContactFirst" class="col-sm-3 control-label required">First name</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="i_primaryContactFirst">
+                    </div>
+                    <label for="i_primaryContactLast" class="col-sm-3 control-label required">Last name</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="i_primaryContactLast">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_contactTitle" class="col-sm-3 control-label required">Contact title</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="i_contactTitle">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_contactEmail" class="col-sm-3 control-label required">Contact e-mail</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="i_contactEmail">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_orgType" class="col-sm-3 control-label required">What type of organization are you?</label>
+            <div class="col-sm-3">
+                <select class="form-control" id="i_orgType">
+                    <option value="1" selected="selected">ISO</option>
+                    <option value="31">Bank</option>
+                    <option value="32">Vendor</option>
+                    <option value="33">Payment Facilitator</option>
+                    <option value="34">Processor</option>
+                    <option value="0">Law Enforcement</option>
+                    <option value="0">Card Scheme</option>
+                    <option value="39">Other</option>                    
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_whatYouDo" class="col-sm-3 control-label required">Describe what you do</label>
+            <div class="col-sm-6">
+                <textarea rows="3" class="form-control" id="i_whatYouDo"></textarea>                
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_referral" class="col-sm-3 control-label">Who referred you to MAC?</label>
+            <div class="col-sm-6">
+                <div class="form-group row" style="margin-bottom: 0;">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="i_referral">
+                    </div>
+                    <label for="i_referralCode" class="col-sm-3 control-label">Referral code</label>
+                    <div class="col-sm-3">
+                        <input type="text" class="form-control" id="i_referralCode">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_acquiringBank" class="col-sm-3 control-label">Who is your acquiring bank?</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="i_acquiringBank">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="i_liability" class="col-sm-3 control-label required">Percentage of liability held</label>
+            <div class="col-sm-1">
+                <input type="text" class="form-control" id="i_liability">
+            </div>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="i_membershipRadios" id="i_membershipRadios" value="0" checked>
+                    Individual ($75.00)
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="i_membershipRadios" id="i_membershipRadios" value="1">
+                    Corporate Regular ($225.00)
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="i_membershipRadios" id="i_membershipRadios" value="2">
+                    Corporate Additional ($50.00)
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="i_membershipRadios" id="i_membershipRadios" value="4">
+                    Partner ($300.00)
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="i_membershipRadios" id="i_membershipRadios" value="5">
+                    Vendor ($500.00)
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="i_membershipRadios" id="i_membershipRadios" value="6">
+                    Sponsor ($1,000.00)
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="i_membershipRadios" id="i_membershipRadios" value="7">
+                    Law Enforcement Professional (Free)
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="i_membershipRadios" id="i_membershipRadios" value="32">
+                    Partner Additional ($75.00)
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="i_membershipRadios" id="i_membershipRadios" value="33">
+                    Vendor Additional ($100.00)
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="i_membershipRadios" id="i_membershipRadios" value="34">
+                    Sponsor Additional ($200.00)
+                </label>
+            </div>
+        </div>
+        <div class="col-sm-6 col-sm-offset-3" style="margin-top: 25px;">
+            <div class="g-recaptcha" data-sitekey="6LfXiSgTAAAAAGqvO8Ye46atZTvPtY7-cdNqYTtu"></div>            
+            <button class="btn-success btn-lg" style="margin-top:25px; display:block;">Submit Application</button>
+            <br />
+            <p style="font-weight:bold;">Once you have submitted your application, someone from the MAC Membership committee will contact you with any follow up questions.</p>
+            <br/>
+            <strong><span style="color:#d60000">*</span></strong>required field
+        </div>
+    </form>
+</div>
