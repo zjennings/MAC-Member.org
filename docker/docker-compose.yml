@@ -1,5 +1,12 @@
 version: '2'
 services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: django
+      MYSQL_DATABASE: django
+      MYSQL_USER: django
+      MYSQL_PASSWORD: django
   web:
     build:
       context: ..
@@ -9,3 +16,5 @@ services:
       - /code
     ports:
       - "8000:8000"
+    depends_on:
+      - db
