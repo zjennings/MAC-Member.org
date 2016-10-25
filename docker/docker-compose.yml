@@ -8,13 +8,14 @@ services:
       MYSQL_USER: django
       MYSQL_PASSWORD: django
   web:
+    depends_on:
+      - db
     build:
       context: ..
       dockerfile: docker/Dockerfile
     command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - /code
+    entrypoint: /code/wait-for-it.sh db:3306 --
     ports:
       - "8000:8000"
-    depends_on:
-      - db
+    volumes:
+      - /code
