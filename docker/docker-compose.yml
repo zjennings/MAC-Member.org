@@ -13,9 +13,9 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    command: python manage.py runserver 0.0.0.0:8000
-    entrypoint: /code/wait-for-it.sh db:3306 --
+    command: python src/manage.py runserver 0.0.0.0:8000
+    entrypoint: /service/wait-for-it.sh db:3306 --
     ports:
       - "8000:8000"
     volumes:
-      - /code
+      - ../src:/service/src
